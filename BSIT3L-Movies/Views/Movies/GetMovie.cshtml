@@ -5,9 +5,38 @@
 <html>
 <head>
     <title>Movie</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: left;
+            margin: 5px;
+        }
+
+        iframe {
+            margin-top: 20px;
+            display: block;
+            margin: 0 auto;
+            border: 5px solid white; /* Add white border to the iframe */
+        }
+    </style>
 </head>
 <body>
     <h2>Movie Details</h2>
+    <!-- Add the YouTube video here -->
+    <iframe width="580" height="345" src="@Model.link" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p>Movie ID: @Model.Id</p>
     <p>Movie Name: @Model.Name</p>
     <p>Rating: @Model.Rating</p>

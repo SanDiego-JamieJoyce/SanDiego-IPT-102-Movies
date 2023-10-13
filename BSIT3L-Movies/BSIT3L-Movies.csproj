@@ -13,6 +13,11 @@
     <None Remove="Views\Movies\" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="wwwroot\Content\Image\" />
     <Folder Include="Views\Movies\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Content\Image\inception.jpg" />
+    <None Include="wwwroot\Content\Image\titanic.jpg" />
   </ItemGroup>
 </Project>
